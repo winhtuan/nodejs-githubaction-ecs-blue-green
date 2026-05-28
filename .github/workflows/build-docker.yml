@@ -22,8 +22,8 @@ on:
 
 env:
   AWS_REGION: ap-southeast-1
-  ECR_REGISTRY: 799227077423.dkr.ecr.ap-southeast-1.amazonaws.com
-  ECR_REPOSITORY: nodejs-random-color-0601
+  ECR_REGISTRY: 821014378805.dkr.ecr.ap-southeast-1.amazonaws.com/learn-github-action/ecs-blue-green
+  ECR_REPOSITORY: learn-github-action/ecs-blue-green
 
 jobs:
   build-and-push:
