@@ -1,9 +1,9 @@
 name: Build and Push Docker Image
 
 on:
-  push:
-    branches:
-      - main # hoặc thay đổi thành nhánh bạn muốn theo dõi
+  # push:
+  #   branches:
+  #     - master # hoặc thay đổi thành nhánh bạn muốn theo dõi
   # pull_request:
   #   branches:
   #     - master
@@ -22,7 +22,7 @@ on:
 
 env:
   AWS_REGION: ap-southeast-1
-  ECR_REGISTRY: 821014378805.dkr.ecr.ap-southeast-1.amazonaws.com/learn-github-action/ecs-blue-green
+  ECR_REGISTRY: 821014378805.dkr.ecr.ap-southeast-1.amazonaws.com
   ECR_REPOSITORY: learn-github-action/ecs-blue-green
 
 jobs:
